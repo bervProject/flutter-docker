@@ -1,4 +1,4 @@
-FROM thyrlian/android-sdk:2.6
+FROM thyrlian/android-sdk:3.0
 WORKDIR /app/downloads
 RUN apt-get install wget xz-utils -y && \
     wget https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.5.4-hotfix.2-stable.tar.xz && \

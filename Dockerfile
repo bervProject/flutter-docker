@@ -5,5 +5,6 @@ RUN apt-get update && apt-get install wget xz-utils -y && \
     wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}-stable.tar.xz && \
     tar -xf flutter_linux_${FLUTTER_VERSION}-stable.tar.xz && \
     export PATH="$PATH:`pwd`/flutter/bin" && \
+    git config --global --add safe.directory /app/downloads/flutter && \
     flutter doctor
 ENV PATH="$PATH:`pwd`/flutter/bin"
